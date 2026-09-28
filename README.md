@@ -23,7 +23,7 @@ A full-stack web application built using the MERN stack (MongoDB, Express.js, Re
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   git clone https://github.com/Neha-soam/WanderLust
    ```
 
 2. Navigate to the project directory:
