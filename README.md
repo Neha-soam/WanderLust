@@ -1,57 +1,113 @@
 # WanderLust
-A MERN stack-based tourism platform where users can explore tourist destinations, create and manage listings, share reviews, and view locations on interactive maps.
-# VNB Website
+A MER# WanderLust 🌍
 
-A full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js).
-
-## Tech Stack
-
-* **Frontend:** React.js
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB
-* **Architecture:** MERN Stack
+A web-based travel and tourism platform where users can explore destinations, create and manage travel listings, share reviews, and view locations on an interactive map.
 
 ## Features
 
-* Responsive user interface
-* Frontend and backend integration
-* MongoDB database connectivity
-* REST API-based communication
+* **User Authentication:** Secure signup and login using Passport.js.
+* **Tourist Listings:** Browse tourist destinations and view their details, photos, and locations.
+* **Create Listings:** Authenticated users can add their own tourist destination listings.
+* **Listing Management:** Users can edit or delete the listings they have created.
+* **Reviews and Ratings:** Share experiences and rate listed destinations.
+* **Interactive Maps:** View destination locations using Leaflet and OpenStreetMap.
+* **Image Uploads:** Upload and manage listing images using Cloudinary.
+* **User Dashboard:** View and manage your own listings.
 
-## Installation and Setup
+## Tech Stack
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Neha-soam/WanderLust
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd YOUR_PROJECT_FOLDER
-   ```
-
-3. Install dependencies for the frontend and backend:
-
-   ```bash
-   npm install
-   ```
-
-4. Configure the required environment variables in a `.env` file.
-
-5. Start the application using the appropriate development commands.
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB, Mongoose
+* **Frontend:** EJS, HTML, CSS, JavaScript, Bootstrap
+* **Authentication:** Passport.js
+* **Maps:** Leaflet, OpenStreetMap
+* **Image Hosting:** Cloudinary
 
 ## Project Structure
 
-* `frontend/` – React frontend
-* `backend/` – Node.js and Express backend
+```text
+WanderLust/
+├── classroom/
+├── controller/
+├── init/
+├── models/
+├── public/
+│   ├── css/
+│   └── js/
+├── routes/
+├── uploads/
+├── utils/
+├── views/
+│   ├── includes/
+│   ├── layouts/
+│   ├── listings/
+│   └── users/
+├── app.js
+├── cloudconfig.js
+├── middleware.js
+├── schema.js
+├── package.json
+└── .gitignore
+```
 
-## Technologies Used
+## Installation and Setup
 
-MongoDB, Express.js, React.js, Node.js, JavaScript
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Neha-soam/WanderLust.git
+cd WanderLust
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the project root and configure the required variables, such as:
+
+```env
+ATLASDB_URL=your_mongodb_connection_string
+SECRET=your_session_secret
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_API_SECRET=your_cloudinary_api_secret
+```
+
+Use the exact variable names expected by your application code. Never commit your `.env` file or expose API secrets.
+
+### 4. Start the application
+
+```bash
+node app.js
+```
+
+If your `package.json` defines a start script, you can use:
+
+```bash
+npm start
+```
+
+Open the local URL shown in your terminal.
+
+## Future Improvements
+
+* Add destination search and filtering.
+* Improve the user dashboard.
+* Deploy the application online.
+* Add more travel-related features.
+
+## Purpose
+
+WanderLust was developed as a college project to demonstrate web application development, user authentication, database integration, image uploads, reviews, and interactive maps.
 
 ## Author
 
-Neha Soam
+**Neha Soam**
+
+GitHub: [Neha-soam](https://github.com/Neha-soam)
+N stack-based tourism platform where users can explore tourist destinations, create and manage listings, share reviews, and view locations on interactive maps.
 
